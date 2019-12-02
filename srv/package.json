@@ -4,7 +4,9 @@
     "dependencies": {
         "@sap/cds": "^3.18.4",
         "express": "^4.17.1",
-        "@sap/hana-client": "^2.4.167"
+        "@sap/hana-client": "^2.4.167",
+        "@sap/xssec": "^2.2.3",
+        "passport": "^0.4.0"
     },
     "engines": {
         "node": "^10"

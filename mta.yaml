@@ -22,6 +22,7 @@ modules:
           url: ${default-url}
     requires:
       - name: mycap-db-hdi-container
+      - name: mycap-uaa
   - name: mycap-ui
     type: nodejs
     path: app
@@ -29,6 +30,7 @@ modules:
       memory: 256M
       disk-quota: 256M
     requires:
+      - name: mycap-uaa
       - name: srv_api
         group: destinations
         properties: 
@@ -41,3 +43,9 @@ resources:
     type: com.sap.xs.hdi-container
     properties:
       hdi-container-name: ${service-name}
+  - name: mycap-uaa
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service-plan: application
+      service: xsuaa
+      path: ./xs-security.json 
