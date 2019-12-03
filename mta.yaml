@@ -38,6 +38,15 @@ modules:
           strictSSL: true
           name: srv_api
           url: ~{url}
+  - name: mycap-java
+    type: java
+    path: objectstore
+    parameters:
+      memory: 800M
+      disk-quota: 512M
+      buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    requires:
+      - name: mycap-objectstore
 resources:
   - name: mycap-db-hdi-container
     type: com.sap.xs.hdi-container
@@ -49,3 +58,8 @@ resources:
       service-plan: application
       service: xsuaa
       path: ./xs-security.json 
+  - name: mycap-objectstore
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: objectstore
+      service-plan: s3-standard
