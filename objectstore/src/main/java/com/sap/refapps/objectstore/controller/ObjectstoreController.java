@@ -18,6 +18,7 @@ import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,6 +34,7 @@ import com.sap.refapps.objectstore.util.ObjectStoreUtil;
 
 @RestController
 @RequestMapping("/objectstorage.svc/api/v1")
+@PreAuthorize("hasAuthority('mycapuser')")
 public class ObjectstoreController {
 
 	private ObjectStoreService objectStoreService;

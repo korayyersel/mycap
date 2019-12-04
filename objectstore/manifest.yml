@@ -1,0 +1,10 @@
+---
+applications:
+- name: mycap-java
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: target/mycap-java-1.0.0.war
+  disk-quota: 512M
+  memory: 800M
+  services:
+   - mycap-objectstore
+   - mycap-uaa
