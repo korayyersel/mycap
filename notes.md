@@ -14,9 +14,9 @@
 `npm i -g @sap/cds` ???
 
  4. Install SQLite from http://sqlite.org/download.html ( on Windows only; included with Mac and Linux) 
- oder einfach 
+ oder einfach folgender npm Skript?
  
- `npm install sqlite3 -D?`
+ `npm install sqlite3 -D` 
  
  5. CF CLI https://github.com/cloudfoundry/cli#downloads
  6. CF CLI MTA Plugin 
