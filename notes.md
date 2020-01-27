@@ -13,8 +13,7 @@
 
 `npm i -g @sap/cds` ???
 
- 4. Install SQLite from http://sqlite.org/download.html ( on Windows only; included with Mac and Linux) 
- oder einfach folgender npm Skript?
+ 4. Install SQLite from http://sqlite.org/download.html ( on Windows only; included with Mac and Linux) oder einfach folgender npm Skript?
  
  `npm install sqlite3 -D` 
  
