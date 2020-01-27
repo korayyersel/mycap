@@ -49,3 +49,4 @@
 
 # ToDos
 > TODO add destination for java. change xs-app.json to forward calls from ui to backend
+> TODO Chocolatey??
