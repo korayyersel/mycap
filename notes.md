@@ -2,38 +2,44 @@
  
  1. Install Node.js from https://nodejs.org
  2. Set npm registry for @sap packages
- 
-`npm set @sap:registry=https://npm.sap.com`
-
+```bash 
+npm set @sap:registry=https://npm.sap.com
+```
 3. Install cds development kit globally 
-
-`npm i -g @sap/cds-dk`
-
-`cds  #> test-run it` 
-
-`npm i -g @sap/cds` ???
-
+```bash
+npm i -g @sap/cds-dk
+cds  #> test-run it 
+(npm i -g @sap/cds) > ???
+```
  4. Install grunt
+ ```bash
+ npm install -g grunt-cli
+ ```
+ 5. Install Chocolatey 
+ ```bash
+  @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+  ```
+ 6. Install Node.js Long Term Support (LTS) version, SQLite, make, curl (command-line client for URLs), jq (lightweight and flexible command-line JSON processor)
+ ```bash
+choco install -y nodejs-lts sqlite make curl jq
+```
+ 7. Install Windows Build Tools: 	
+ ```bash	
+ npm install --global windows-build-tools	
+ ```
+ 8. CF CLI https://github.com/cloudfoundry/cli#downloads
+ 9. CF CLI MTA Plugin 
+ ```bash
+ cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
+ cf install-plugin multiapps
+ ```
  
- `npm install -g grunt-cli`
-
- 5. Install SQLite from http://sqlite.org/download.html ( on Windows only; included with Mac and Linux) oder einfach folgender npm Skript?
- 
- `npm install sqlite3 -D` 
- 
- 6. CF CLI https://github.com/cloudfoundry/cli#downloads
- 7. CF CLI MTA Plugin 
- 
- `cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org`
- 
- `cf install-plugin multiapps`
- 
- 8. Cloud Foundry CLI plugin to work with SAP Cloud HTML5 Applications Repository https://github.com/SAP/cf-html5-apps-repo-cli-plugin
- 9. Install Visual Studio Code (https://cap.cloud.sap/docs/get-started/in-vscode)
- 10. Add CDS Editor (https://cap.cloud.sap/docs/get-started/in-vscode)
- 11. Running Services (https://cap.cloud.sap/docs/get-started/in-vscode)
- 12. Debugging Services (https://cap.cloud.sap/docs/get-started/in-vscode)
- 13. Restarting the Server (https://cap.cloud.sap/docs/get-started/in-vscode)
+ 10. Cloud Foundry CLI plugin to work with SAP Cloud HTML5 Applications Repository https://github.com/SAP/cf-html5-apps-repo-cli-plugin
+ 11. Install Visual Studio Code (https://cap.cloud.sap/docs/get-started/in-vscode)
+ 12. Add CDS Editor (https://cap.cloud.sap/docs/get-started/in-vscode)
+ 13. Running Services (https://cap.cloud.sap/docs/get-started/in-vscode)
+ 14. Debugging Services (https://cap.cloud.sap/docs/get-started/in-vscode)
+ 15. Restarting the Server (https://cap.cloud.sap/docs/get-started/in-vscode)
  
  # Commands
  
