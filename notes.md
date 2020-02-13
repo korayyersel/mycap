@@ -5,7 +5,7 @@
 ```bash 
 npm set @sap:registry=https://npm.sap.com
 ```
-3. Install cds development kit globally 
+3. Install cds and cds development kit globally 
 ```bash
 npm i -g @sap/cds-dk
 npm i -g @sap/cds
