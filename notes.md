@@ -16,6 +16,7 @@ cds  #> test-run it
  npm install -g grunt-cli
  ```
  5. Install Chocolatey https://chocolatey.org/docs/installation#install-with-cmdexe (Run as Admin!)
+ 
  6. Install Node.js Long Term Support (LTS) version, SQLite, make, curl (command-line client for URLs), jq (lightweight and flexible command-line JSON processor)
  ```bash
 choco install -y nodejs-lts sqlite make curl jq
@@ -25,6 +26,7 @@ choco install -y nodejs-lts sqlite make curl jq
  npm install --global windows-build-tools	
  ```
  8. CF CLI https://github.com/cloudfoundry/cli#downloads
+ 
  9. CF CLI MTA Plugin 
  ```bash
  cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
@@ -34,9 +36,6 @@ choco install -y nodejs-lts sqlite make curl jq
  10. Cloud Foundry CLI plugin to work with SAP Cloud HTML5 Applications Repository https://github.com/SAP/cf-html5-apps-repo-cli-plugin
  11. Install Visual Studio Code (https://cap.cloud.sap/docs/get-started/in-vscode)
  12. Add CDS Editor (https://cap.cloud.sap/docs/get-started/in-vscode)
- 13. Running Services (https://cap.cloud.sap/docs/get-started/in-vscode)
- 14. Debugging Services (https://cap.cloud.sap/docs/get-started/in-vscode)
- 15. Restarting the Server (https://cap.cloud.sap/docs/get-started/in-vscode)
  
  # Commands
  
