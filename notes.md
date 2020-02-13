@@ -8,8 +8,9 @@ npm set @sap:registry=https://npm.sap.com
 3. Install cds development kit globally 
 ```bash
 npm i -g @sap/cds-dk
+npm i -g @sap/cds
 cds  #> test-run it 
-(npm i -g @sap/cds) > ???
+
 ```
  4. Install grunt
  ```bash
