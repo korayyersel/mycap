@@ -16,10 +16,7 @@ cds  #> test-run it
  ```bash
  npm install -g grunt-cli
  ```
- 5. Install Chocolatey 
- ```bash
-  @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-  ```
+ 5. Install Chocolatey https://chocolatey.org/docs/installation#install-with-cmdexe
  6. Install Node.js Long Term Support (LTS) version, SQLite, make, curl (command-line client for URLs), jq (lightweight and flexible command-line JSON processor)
  ```bash
 choco install -y nodejs-lts sqlite make curl jq
